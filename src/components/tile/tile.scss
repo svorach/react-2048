@@ -1,0 +1,25 @@
+@import '../../sass/variables';
+
+.tile {
+  align-items: center;
+  border: none;
+  box-shadow: $shadow;
+  display: flex;
+  background: $opaque-medium;
+  flex: 1;
+  font-weight: 500;
+  font-size: 10vh;
+  justify-content: center;
+  margin: 20px;
+  outline: none;
+  padding: auto;
+  text-align: center;
+  text-shadow: $shadow;
+  text-transform: uppercase;
+}
+
+$shade: #cbecff;
+
+.num-2 {
+  background: darken($shade, 2%)
+}

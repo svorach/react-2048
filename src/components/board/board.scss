@@ -1,0 +1,37 @@
+$vh-size: 80vh;
+$vw-size: 80vw;
+
+.board {
+  display: flex;
+  flex-direction: column;
+  height: $vh-size;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7.5vh;
+  position: relative;
+  width: $vh-size;
+
+  &.large > .row > .tile > .claim {
+    font-size: 8vh;
+  }
+
+  &.huge > .row > .tile > .claim {
+    font-size: 4vh;
+  }
+}
+
+@media (max-width: 800px) {
+  .board {
+    height: $vw-size;
+    width: $vw-size;
+
+    &.large > .row > .tile > .claim {
+      font-size: 8vw;
+    }
+
+    &.huge > .row > .tile > .claim {
+      font-size: 4vw;
+    }
+  }
+}
